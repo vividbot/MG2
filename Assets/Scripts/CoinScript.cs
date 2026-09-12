@@ -11,6 +11,11 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(-.01f,0,0);
+    }
+
+    void OnTriggerEnter2D(Collider2D trigger)
+    {
+        Destroy(gameObject);
     }
 }
